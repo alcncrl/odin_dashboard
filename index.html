@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Charts -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <div class="logo-section"><img class="logo" src="./files/icons/view-dashboard.svg" alt=""> Dashboard</div>
+        <div class="divider"></div>
+        <div class="sidebar_options">
+          <ul>
+            <li>
+              <a href="" class="home"
+                ><img src="./files/icons/home.svg" alt="" />Home
+              </a>
+            </li>
+            <li>
+              <a href="" class="profile"
+                ><img src="./files/icons/card-account-details.svg" alt="" />
+                Profile</a
+              >
+            </li>
+            <li>
+              <a href="" class="messages"
+                ><img src="./files/icons/message.svg" alt="" /> Messages</a
+              >
+            </li>
+            <li>
+              <a href="" class="history"
+                ><img src="./files/icons/history.svg" alt="" /> History</a
+              >
+            </li>
+            <li>
+              <a href="" class="task"
+                ><img src="./files/icons/view-list.svg" alt="" /> Task</a
+              >
+            </li>
+            <li>
+              <a href="" class="communities"
+                ><img src="./files/icons/account-group.svg" alt="" />
+                Communities</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="divider"></div>
+        <div class="sidebar_options">
+          <ul>
+            <li>
+              <a href="" class="settings"
+                ><img src="./files/icons/cog.svg" alt="" /> Settings</a
+              >
+            </li>
+            <li>
+              <a href="" class="support"
+                ><img src="./files/icons/headphones.svg" alt="" /> Support</a
+              >
+            </li>
+            <li>
+              <a href="" class="privacy"
+                ><img src="./files/icons/shield-check.svg" alt="" /> Privacy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="divider"></div>
+        <div>
+          <a href="" class="logout"
+            ><img src="./files/icons/logout.svg" alt="" /> Logout</a
+          >
+        </div>
+      </nav>
+
+      <div class="header">
+        <div class="top_header">
+          <div class="top_left">
+            <img src="./files/icons/magnify.svg" alt="" />
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="top_right">
+            <div class="notification">
+              <img
+                class="icon"
+                src="./files/icons/bell-ring.svg"
+                alt="Notification Bell"
+              />
+            </div>
+            <div class="profile_picture">
+              <img src="./files/avatars/dragon.png" alt="" />
+            </div>
+            <p>Exkalibur</p>
+          </div>
+        </div>
+        <div class="bottom_header">
+          <div class="bottom_left">
+            <div class="profile_picture2">
+              <img src="./files/avatars/dragon.png" alt="" />
+            </div>
+            <p>Hi, Exkalibur!</p>
+          </div>
+          <div class="bottom_right">
+            <button class="">New</button>
+            <button class="">Upload</button>
+            <button class="">Share</button>
+          </div>
+        </div>
+        <div class="friends-section">
+          <div class="">
+            <img src="./files/icons/plus-circle.svg" alt="" id="add_friend" />
+          </div>
+          <div class="">
+            <img src="./files/avatars/cat.png" alt="" />
+          </div>
+          <div class="">
+            <img src="./files/avatars/chicken.png" alt="" />
+          </div>
+          <div class="">
+            <img src="./files/avatars/hippopotamus.png" alt="" />
+          </div>
+          <div class="">
+            <img src="./files/avatars/panda.png" alt="" />
+          </div>
+          <div class="">
+            <img src="./files/avatars/shark.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main_content">
+        <div class="column-one">
+        <div class="projects">
+          <h3 class="project-label">Projects</h3>
+          <div class="project_card">
+            <div class="project_title">Super Cool Project</div>
+            <div class="project_desc">
+              Sed non faucibus quam. Aliquam quis augue lorem. Sed pretium
+              malesuada ante. Donec eu commodo justo.
+            </div>
+            <div class="card_controls">
+              <div class="favorite">
+                <a href=""
+                  ><img src="./files/icons/star-plus-outline.svg" alt=""
+                /></a>
+              </div>
+              <div class="view">
+                <a href=""
+                  ><img src="./files/icons/eye-plus-outline.svg" alt=""
+                /></a>
+              </div>
+              <div class="share">
+                <a href=""
+                  ><img src="./files/icons/share-outline.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="project_card">
+            <div class="project_title">Super Cool Project</div>
+            <div class="project_desc">
+              Sed non faucibus quam. Aliquam quis augue lorem. Sed pretium
+              malesuada ante. Donec eu commodo justo.
+            </div>
+            <div class="card_controls">
+              <div class="favorite">
+                <a href=""
+                  ><img src="./files/icons/star-plus-outline.svg" alt=""
+                /></a>
+              </div>
+              <div class="view">
+                <a href=""
+                  ><img src="./files/icons/eye-plus-outline.svg" alt=""
+                /></a>
+              </div>
+              <div class="share">
+                <a href=""
+                  ><img src="./files/icons/share-outline.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="project_card">
+            <div class="project_title">Super Cool Project</div>
+            <div class="project_desc">
+              Sed non faucibus quam. Aliquam quis augue lorem. Sed pretium
+              malesuada ante. Donec eu commodo justo.
+            </div>
+            <div class="card_controls">
+              <div class="favorite">
+                <a href=""
+                  ><img src="./files/icons/star-plus-outline.svg" alt=""
+                /></a>
+              </div>
+              <div class="view">
+                <a href=""
+                  ><img src="./files/icons/eye-plus-outline.svg" alt=""
+                /></a>
+              </div>
+              <div class="share">
+                <a href=""
+                  ><img src="./files/icons/share-outline.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="project_card">
+            <div class="project_title">Super Cool Project</div>
+            <div class="project_desc">
+              Sed non faucibus quam. Aliquam quis augue lorem. Sed pretium
+              malesuada ante. Donec eu commodo justo.
+            </div>
+            <div class="card_controls">
+              <div class="favorite">
+                <a href=""
+                  ><img src="./files/icons/star-plus-outline.svg" alt=""
+                /></a>
+              </div>
+              <div class="view">
+                <a href=""
+                  ><img src="./files/icons/eye-plus-outline.svg" alt=""
+                /></a>
+              </div>
+              <div class="share">
+                <a href=""
+                  ><img src="./files/icons/share-outline.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="project_card">
+            <div class="project_title">Super Cool Project</div>
+            <div class="project_desc">
+              Sed non faucibus quam. Aliquam quis augue lorem. Sed pretium
+              malesuada ante. Donec eu commodo justo.
+            </div>
+            <div class="card_controls">
+              <div class="favorite">
+                <a href=""
+                  ><img src="./files/icons/star-plus-outline.svg" alt=""
+                /></a>
+              </div>
+              <div class="view">
+                <a href=""
+                  ><img src="./files/icons/eye-plus-outline.svg" alt=""
+                /></a>
+              </div>
+              <div class="share">
+                <a href=""
+                  ><img src="./files/icons/share-outline.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="project_card">
+            <div class="project_title">Super Cool Project</div>
+            <div class="project_desc">
+              Sed non faucibus quam. Aliquam quis augue lorem. Sed pretium
+              malesuada ante. Donec eu commodo justo.
+            </div>
+            <div class="card_controls">
+              <div class="favorite">
+                <a href=""
+                  ><img src="./files/icons/star-plus-outline.svg" alt=""
+                /></a>
+              </div>
+              <div class="view">
+                <a href=""
+                  ><img src="./files/icons/eye-plus-outline.svg" alt=""
+                /></a>
+              </div>
+              <div class="share">
+                <a href=""
+                  ><img src="./files/icons/share-outline.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+      <div class="charts">
+        <h3 class="chart-label">Stats</h3>
+        <div class="charts-content">
+          <div id="my-chart">
+            <table class="charts-css pie show-heading">
+              <caption>Social Media Traffic</caption>
+              <tr>
+                <td style="--start: 0.00; --end: 0.75;"><span class="data">74%</span></td>
+              </tr>
+              <tr>
+                <td style="--start: 0.75; --end: 0.95;"><span class="data">16%</span></td>
+              </tr>
+              <tr>
+                <td style="--start: 0.95; --end: 1;"><span class="data">5%</span></td>
+              </tr>
+            </table>
+          
+            <ul class="charts-css legend legend-circle">
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>X</li>
+            </ul>
+          
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="column-two">
+        <div class="announcements">
+          <h3 class="announcements-label">Announcements</h3>
+          <div class="announcements-content">
+          <ul>
+            <li>
+              <h5>Site Maintenance</h5>
+              <p>
+                Vestibulum condimentum tellus lacus, in accumsan elit maximus
+                ac. Donec hendrerit sodales congue...
+              </p>
+            </li>
+            <li>
+              <h5>Community Share Day</h5>
+              <p>
+                Nam vel lectus tincidunt, rutrum nulla eu, ornare libero.
+                Aliquam dictum accumsan porttitor...
+              </p>
+            </li>
+            <li>
+              <h5>Updated Privacy Policy</h5>
+              <p>
+                Phasellus efficitur nisi eget elit consectetur, eget condimentum
+                ante auctor. Cras fringilla sagittis sem in mattis...
+              </p>
+            </li>
+          </ul>
+        </div>
+        </div>
+        
+        
+        <div class="trending">
+          <h3 class="trending-label">Trending</h3>
+          <div class="trending-content">
+          <div class="trending_card">
+            <img src="./files/avatars/koala.png" alt="" class="trend_avatar" />
+            <div class="trend_details">
+              <h4>@koala</h4>
+              <p>Lazy Grey</p>
+              <div class="see-more">
+                <a href=""><img src="./files/icons/more.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="trending_card">
+            <img
+              src="./files/avatars/giraffe.png"
+              alt=""
+              class="trend_avatar"
+            />
+            <div class="trend_details">
+              <h4>@giraffe</h4>
+              <p>Long Neck Disaster</p>
+              <div class="see-more">
+                <a href=""><img src="./files/icons/more.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="trending_card">
+            <img src="./files/avatars/panda.png" alt="" class="trend_avatar" />
+            <div class="trend_details">
+              <h4>@panda</h4>
+              <p>Black Eyed Bandit</p>
+              <div class="see-more">
+                <a href=""><img src="./files/icons/more.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="trending_card">
+            <img
+              src="./files/avatars/hippopotamus.png"
+              alt=""
+              class="trend_avatar"
+            />
+            <div class="trend_details">
+              <h4>@hippopotamus</h4>
+              <p>Cholesterol Master</p>
+              <div class="see-more">
+                <a href=""><img src="./files/icons/more.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

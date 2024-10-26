@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --primaryColor: #fafaf9;
+  --backgroundColor: #e2e8f0;
+  --borderColor: #a1a1aa;
+  --buttonColor: #0284c7;
+  --buttonActive: #0369a1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Lato', Courier, monospace, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--backgroundColor);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* CSS STARTS HERE */
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 200px 5fr;
+  grid-template-rows: 200px 5fr;
+  gap: 8px;
+}
+/* CSS for the Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background-color: var(--primaryColor);
+  box-shadow: 2px 2px 5px var(--borderColor);
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  padding: 24px 0px 16px 0px;
+}
+
+.logo-section .logo {
+  width: 36px;
+  height: 36px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 16px;
+  margin-bottom: 12px;
+}
+
+.sidebar img {
+  height: 20px;
+  width: 20px;
+}
+
+/* CSS for the Header */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 12px;
+  background-color: var(--primaryColor);
+  box-shadow: -0.5px 0.5px 5px 1.5px var(--borderColor);
+}
+
+/* CSS for Top Header */
+.top_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px 0px 40px;
+}
+
+.top_left {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-content: center;
+}
+
+.top_left img {
+  height: 25px;
+  width: 25px;
+}
+
+.top_left input {
+  height: 25px;
+  width: 300px;
+  background-color: var(--backgroundColor);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.top_right {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.top_right img {
+  height: 25px;
+  width: 25px;
+}
+/* CSS for Bottom Header */
+.bottom_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px 0px 40px;
+}
+
+.bottom_left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bottom_left img {
+  height: 50px;
+  width: 50px;
+}
+
+.bottom_left p {
+  font-size: 24px;
+}
+
+.bottom_right {
+  display: flex;
+  gap: 20px;
+}
+
+/* CSS for Friends Section */
+.friends-section {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  gap: 8px;
+}
+
+.friends-section #add_friend {
+  width: 24px;
+  height: 24px;
+}
+.friends-section img {
+  width: 32px;
+  height: 32px;
+}
+
+/* CSS for the Main Content */
+
+.main_content {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr max-content;
+  gap: 8px;
+}
+/* CSS for Column 1 in the Main Content */
+.column-one {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  gap: 8px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-template-rows: 30px 2fr;
+  gap: 8px;
+}
+
+.project-label {
+  grid-column: 1 / 4;
+}
+
+.project_card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 200px;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: var(--primaryColor);
+  border-left: 8px solid orange;
+  box-shadow: 2px 2px 5px var(--borderColor);
+}
+
+.project_card .project_title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.project_card .project_desc {
+  font-size: 14px;
+  font-weight: 300;
+  flex: 1;
+}
+
+.card_controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.project_card .card_controls img {
+  height: 20px;
+  width: 20px;
+}
+
+.charts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.charts-content {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  background-color: var(--primaryColor);
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px var(--borderColor);
+}
+
+/* CSS for Column 2 in the Main Content */
+.column-two {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  gap: 8px;
+}
+
+/* CSS for Announcements */
+.announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  grid-column: 2 / 3;
+}
+
+.announcements-content {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 12px;
+  background-color: var(--primaryColor);
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px var(--borderColor);
+}
+
+.announcements-content h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.announcements-content p {
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.announcements-content li {
+  margin-bottom: 12px;
+}
+
+.announcements-content li:not(:last-child) {
+  border-bottom: 1px solid var(--borderColor);
+}
+
+/* CSS for Trending */
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 200px;
+  margin-right: 10px;
+  grid-column: 2 / 3;
+  border-radius: 12px;
+}
+
+.trending-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  gap: 9px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: var(--primaryColor);
+  box-shadow: 2px 2px 5px var(--borderColor);
+}
+
+.trending_card {
+  display: flex;
+  gap: 8px;
+}
+
+.trend_details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.trend_details p {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.trending .trend_avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.see-more {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.see-more img {
+  width: 15px;
+  height: 15px;
+}
+
+/* Global Settings */
+.announcements-label,
+.project-label,
+.trending-label,
+.chart-label {
+  text-align: center;
+  align-self: center;
+}
+
+.divider {
+  background-color: var(--borderColor);
+  height: 1px;
+  margin-bottom: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  width: 80px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  padding: 6px;
+  color: var(--primaryColor);
+  background-color: var(--buttonColor);
+}
+
+h4,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button:hover {
+  background-color: var(--buttonActive);
+}
+
+button:active {
+  background-color: var(--buttonActive);
+  transform: translateY(4px);
+}
+
+a:hover {
+  background-color: var(--backgroundColor);
+}
+
+/* Charts */
+#my-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 380px;
+  padding: 12px;
+  margin: 0 auto;
+}
+#my-chart caption {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+#my-chart .pie {
+  width: 320px;
+  height: 320px;
+}
+#my-chart .legend {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+  font-size: 12px;
+  border: none;
+}
